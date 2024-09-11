@@ -7,8 +7,7 @@ import java.util.List;
 public class StreamsCalculateTotalCost {
     int calculateTotalCostOfAllProducts(List<Product> products) {
         // TODO: implement
-
-        return 0;
+        return products.stream().reduce(0, (product1, product2) -> product1 + product2 );
     }
 
     int calculateTotalCostOfAllGadgets(List<Product> products) {
